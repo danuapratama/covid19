@@ -75,7 +75,7 @@ body {
 }
 
 .darkmode-switch {
-    --width: 60px;
+    --width: 40px;
     --height: 20px;
     width: var(--width);
     height: var(--height);
@@ -88,20 +88,20 @@ body {
 .darkmode-switch span {
     display: inline-grid;
     place-items: center;
-    height: calc(var(--height) * 2);
-    width: calc(var(--height) * 2);
+    height: calc(var(--height) * 1);
+    width: calc(var(--height) * 1);
     border-radius: 50%;
     background-color: var(--color-txt);
     color: var(--bg-content);
-    font-size: 2rem;
+    font-size: 1rem;
     position: absolute;
     left: 0;
-    top: calc(-1 * var(--height) / 2);
+    top: calc(0 * var(--height) / 2);
     transition: left 0.3s ease-in-out;
 }
 
 .darkmode-switch.dark span {
-    left: calc(var(--width) - var(--height) * 2);
+    left: calc(var(--width) - var(--height) * 1);
     background-color: var(--bg-body);
     color: var(--color-txt);
 }
